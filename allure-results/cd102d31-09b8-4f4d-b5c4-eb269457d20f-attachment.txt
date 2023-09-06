@@ -1,0 +1,13 @@
+{
+  "script": "return (function (el1, el2) { return el1 === el2; }).apply(null, arguments)",
+  "args": [
+    {
+      "element-6066-11e4-a52e-4f735466cecf": "782A785D6960E5B950D41D7C9A3D1742_element_61",
+      "ELEMENT": "782A785D6960E5B950D41D7C9A3D1742_element_61"
+    },
+    {
+      "element-6066-11e4-a52e-4f735466cecf": "782A785D6960E5B950D41D7C9A3D1742_element_61",
+      "ELEMENT": "782A785D6960E5B950D41D7C9A3D1742_element_61"
+    }
+  ]
+}

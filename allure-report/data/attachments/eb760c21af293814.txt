@@ -1,0 +1,3 @@
+{
+  "text": "C:\\Users\\KARMA\\AppData\\Local\\Temp\\scoped_dir14560_491483801\\upload14560_312205414\\co.jpg"
+}

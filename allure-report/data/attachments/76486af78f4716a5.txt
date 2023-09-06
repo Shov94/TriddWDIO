@@ -1,0 +1,3 @@
+{
+  "url": "http://www.dhtmlgoodies.com/submitted-scripts/i-google-like-drag-drop/index.html"
+}

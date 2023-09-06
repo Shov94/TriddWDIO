@@ -38,21 +38,15 @@ it('moveTo',async() => {
 // await $("#d2").addValue("hiiiiiiiiiiiii")
 
 
-it('switch',async() => {
-await browser.url("https://www.indeed.com/employers/login")
-await browser.maximizeWindow();
-await $("//a[text()='Sign in']").click();
-await $("#apple-signin-button").click();
-await $("#login-google-button").click();
-})
+// it('switch',async() => {
+// await browser.url("https://www.indeed.com/employers/login")
+// await browser.maximizeWindow();
+// await $("//a[text()='Sign in']").click();
+// await $("#apple-signin-button").click();
+// await $("#login-google-button").click();
 
-// var a=await browser.getWindowHandles();
-// console.log(a);
-// await browser.pause(2000)
-// await browser.switchToWindow(a[0])
-// await browser.saveScreenshot("./ss.png")
-// const a=browser.getUrl()
-// await expect(a).toHaveUrlContaining("Indeed")
+
+
 // })
 
 
