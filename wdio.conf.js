@@ -25,8 +25,8 @@ export const config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
-        //'./test/specs/practice.js',
+        //'./test/specs/**/*.js'
+        './test/specs/practice.js',
         //'./test/specs/Product.js'
         //  './test/specs/Supplier.js'
       // './test/specs/accounts.js'
