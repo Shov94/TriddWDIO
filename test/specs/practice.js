@@ -22,29 +22,29 @@ describe("sample",()=>{
 //     const urll=browser.getUrl()
 //     console.log(urll);
 
-// it('moveTo',async() => {
-//     await browser.url("https://www.myntra.com/")
-//     await browser.maximizeWindow();
-//     let loc=$("//a[@data-group='men']")
-//     await loc.moveTo();
-//    let a= await $("//a[text()='Sneakers']")
-//    await browser.pause(2000)
-//    await a.saveScreenshot("./abc.png")
-//    console.log(a);
-
+it('moveTo',async() => {
+    await browser.url("https://www.myntra.com/")
+    await browser.maximizeWindow();
+    let loc=$("//a[@data-group='men']")
+    await loc.moveTo();
+   let a= await $("//a[text()='Sneakers']")
+   await browser.pause(2000)
+   await a.saveScreenshot("./abc.png")
+   console.log(a);
+})
 // await browser.url("file:///C:/Users/KARMA/Desktop/SELENIUM/Disabled.html")
 // await browser.maximizeWindow();
 // // await document.getElementById("d2")
 // await $("#d2").addValue("hiiiiiiiiiiiii")
 
 
-// it('switch',async() => {
-// await browser.url("https://www.indeed.com/employers/login")
-// await browser.maximizeWindow();
-// await $("//a[text()='Sign in']").click();
-// await $("#apple-signin-button").click();
-// await $("#login-google-button").click();
-// })
+it('switch',async() => {
+await browser.url("https://www.indeed.com/employers/login")
+await browser.maximizeWindow();
+await $("//a[text()='Sign in']").click();
+await $("#apple-signin-button").click();
+await $("#login-google-button").click();
+})
 
 // var a=await browser.getWindowHandles();
 // console.log(a);
@@ -136,20 +136,20 @@ describe("sample",()=>{
 
 
 
-// it('drag and drop',async()=>{
+it('drag and drop',async()=>{
 
-//     // await browser.url("https://jqueryui.com/droppable/")
-//     // await browser.maximizeWindow()
-//     // const ele=await $("#draggable")
-//     // const source=await $("//div[@id='droppable']")
-//     await browser.url("http://www.dhtmlgoodies.com/submitted-scripts/i-google-like-drag-drop/index.html")
-//     await browser.maximizeWindow()
-//     const ele=await $("#block-1")
-//     const source=await $("#block-4")
+    // await browser.url("https://jqueryui.com/droppable/")
+    // await browser.maximizeWindow()
+    // const ele=await $("#draggable")
+    // const source=await $("//div[@id='droppable']")
+    await browser.url("http://www.dhtmlgoodies.com/submitted-scripts/i-google-like-drag-drop/index.html")
+    await browser.maximizeWindow()
+    const ele=await $("#block-1")
+    const source=await $("#block-4")
 
-//     await ele.dragAndDrop(source)
-//     await browser.pause(4000)
-//      })
+    await ele.dragAndDrop(source)
+    await browser.pause(4000)
+     })
 
 
 // it('alert',async()=>{
@@ -196,13 +196,13 @@ describe("sample",()=>{
     // })
 
 
-    //  it('isClickable',async()=>{
+     it('isClickable',async()=>{
 
-    //     await browser.url("https://www.facebook.com/")
-    //     await browser.maximizeWindow()
-    //    const value= await $("//button[text()='Log in']")
-    //    console.log(await value.isClickable());
-
+        await browser.url("https://www.facebook.com/")
+        await browser.maximizeWindow()
+       const value= await $("//button[text()='Log in']")
+       console.log(await value.isClickable());
+     })
 
 
     // await browser.url("file:///C:/Users/KARMA/AppData/Local/Microsoft/Windows/INetCache/IE/LD06SW62/DisabledElements[1].html")
@@ -212,18 +212,18 @@ describe("sample",()=>{
     //  })
 
 
-    //it('isDisplayed',async()=>{
+    it('isDisplayed',async()=>{
 
-        // await browser.url("https://www.facebook.com/")
-        //     await browser.maximizeWindow()
-        //    const value= await $("//button[text()='Log in']")
-        //    console.log(await value.isDisplayed());
+        await browser.url("https://www.facebook.com/")
+            await browser.maximizeWindow()
+           const value1= await $("//button[text()='Log in']")
+           console.log(await value1.isDisplayed());
 
-        // await browser.url("https://omayo.blogspot.com/")
-        // await browser.maximizeWindow()
-        // const value=await $("//button[@id='but1']")
-        // console.log(await value.isClickable());
-    // })
+        await browser.url("https://omayo.blogspot.com/")
+        await browser.maximizeWindow()
+        const value=await $("//button[@id='but1']")
+        console.log(await value.isClickable());
+    })
 
     it('isEnabled',async()=>{
         await browser.url("https://omayo.blogspot.com/")
@@ -336,4 +336,4 @@ describe("sample",()=>{
     //     await browser.pause(5000)
 
     // })
-});
+})
