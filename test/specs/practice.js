@@ -91,26 +91,27 @@ await $("#login-google-button").click();
 
 
 
-    //it('upload',async()=>{
+    it('upload',async()=>{
 
-        // browser.url("https://ps.uci.edu/~franklin/doc/file_upload.html")
-        // let fileloc=await $("//input[@name='userfile']")
-        // let path="./co.jpg"
-        // const abc=await browser.uploadFile(path)
-        // fileloc.setValue(abc)
+        browser.url("https://ps.uci.edu/~franklin/doc/file_upload.html")
+        let fileloc=await $("//input[@name='userfile']")
+        let path="./co.jpg"
+        const abc=await browser.uploadFile(path)
+        fileloc.setValue(abc)
 
-        // await browser.pause(3000)
+        await browser.pause(3000)
+    })
 
 
 
-    // it('scroll',async()=>{
+    it('scroll',async()=>{
 
-    //     browser.url("https://www.tutorialspoint.com/webdriverio/webdriverio_scrolling_operations.htm")
-    //     await browser.maximizeWindow();
-    //     const ele=await $("#print-page")
-    //    await ele.scrollIntoView();
-    //     await browser.pause(4000)
-    // })
+        browser.url("https://www.tutorialspoint.com/webdriverio/webdriverio_scrolling_operations.htm")
+        await browser.maximizeWindow();
+        const ele=await $("#print-page")
+       await ele.scrollIntoView();
+        await browser.pause(4000)
+    })
 
 //     browser.url("https://webdriver.io/docs/api/browser/scroll")
 //     await browser.maximizeWindow();
@@ -202,6 +203,7 @@ it('drag and drop',async()=>{
         await browser.maximizeWindow()
        const value= await $("//button[text()='Log in']")
        console.log(await value.isClickable());
+       console.log("Yes");
      })
 
 
@@ -248,13 +250,13 @@ it('drag and drop',async()=>{
     //     console.log(await value.isExisting());
     // })
 
-    // it('isEqual',async()=>{
-    //         await browser.url("https://omayo.blogspot.com/")
-    //         await browser.maximizeWindow()
-    //         const value=await $("//button[@id='but2']")
-    //         const value1=await $("#but2")
-    //         console.log(await value.isEqual(value1));
-    //     })
+    it('isEqual',async()=>{
+            await browser.url("https://omayo.blogspot.com/")
+            await browser.maximizeWindow()
+            const value=await $("//button[@id='but2']")
+            const value1=await $("#but2")
+            console.log(await value.isEqual(value1));
+        })
 
     // it('waitForClickable',async()=>{
 
