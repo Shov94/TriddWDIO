@@ -26,12 +26,14 @@ export const config = {
     //
     specs: [
         //'./test/specs/**/*.js'
-        './test/specs/practice.js',
+       // './test/specs/practice.js',
         //'./test/specs/Product.js'
         //  './test/specs/Supplier.js'
       // './test/specs/accounts.js'
        //'./test/specs/POS.js'
       // './test/utility/excelpractice.js'
+     // './test/specs/practice.js'
+     './test/specs/example.spec.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -66,7 +68,7 @@ export const config = {
     //
     capabilities: [{
         browserName: 'chrome',
-        //maxInstances: 2,
+        maxInstances: 1,
         "goog:chromeOptions":{
             args:[
                 "disable-notifications"
@@ -130,7 +132,7 @@ export const config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: [],
+    // services: ["chromedriver"],
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber

@@ -374,7 +374,7 @@ describe("sample",()=>{
 
     //  })
 
-    it("notifications",async()=>{
+    it.only("notifications",async()=>{
 
         await browser.url("https://www.yatra.com/")
         await browser.pause(4000)
