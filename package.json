@@ -14,7 +14,8 @@
     "supplier": "npx wdio run ./wdio.conf.js --spec test/specs/supplier.js",
     "accounts":"npx wdio run ./wdio.conf.js --spec test/specs/accounts.js",
     "pos": "npx wdio run ./wdio.conf.js --spec test/specs/POS.js",
-    "product": "npx wdio run ./wdio.conf.js --spec test/specs/Product.js"
+    "product": "npx wdio run ./wdio.conf.js --spec test/specs/Product.js",
+    "practice": "npx wdio run ./wdio.conf.js --spec test/specs/practice.js"
   },
   "dependencies": {
     "chai": "^4.3.8",
