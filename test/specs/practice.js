@@ -1,3 +1,8 @@
+import {expect,assert} from "chai"
+const e = require('chai').expect
+
+
+
 describe("sample",()=>{
 //     it('login',async() => {
 
@@ -22,16 +27,16 @@ describe("sample",()=>{
 //     const urll=browser.getUrl()
 //     console.log(urll);
 
-it('moveTo',async() => {
-    await browser.url("https://www.myntra.com/")
-    await browser.maximizeWindow();
-    let loc=$("//a[@data-group='men']")
-    await loc.moveTo();
-   let a= await $("//a[text()='Sneakers']")
-   await browser.pause(2000)
-   await a.saveScreenshot("./abc.png")
-   console.log(a);
-})
+// it('moveTo',async() => {
+//     await browser.url("https://www.myntra.com/")
+//     await browser.maximizeWindow();
+//     let loc=$("//a[@data-group='men']")
+//     await loc.moveTo();
+//    let a= await $("//a[text()='Sneakers']")
+//    await browser.pause(2000)
+//    await a.saveScreenshot("./abc.png")
+//    console.log(a);
+// })
 // await browser.url("file:///C:/Users/KARMA/Desktop/SELENIUM/Disabled.html")
 // await browser.maximizeWindow();
 // // await document.getElementById("d2")
@@ -85,27 +90,27 @@ it('moveTo',async() => {
 
 
 
-    it('upload',async()=>{
+    // it('upload',async()=>{
 
-        browser.url("https://ps.uci.edu/~franklin/doc/file_upload.html")
-        let fileloc=await $("//input[@name='userfile']")
-        let path="./co.jpg"
-        const abc=await browser.uploadFile(path)
-        fileloc.setValue(abc)
+    //     browser.url("https://ps.uci.edu/~franklin/doc/file_upload.html")
+    //     let fileloc=await $("//input[@name='userfile']")
+    //     let path="./co.jpg"
+    //     const abc=await browser.uploadFile(path)
+    //     fileloc.setValue(abc)
 
-        await browser.pause(3000)
-    })
+    //     await browser.pause(3000)
+    // })
 
 
 
-    it('scroll',async()=>{
+    // it('scroll',async()=>{
 
-        browser.url("https://www.tutorialspoint.com/webdriverio/webdriverio_scrolling_operations.htm")
-        await browser.maximizeWindow();
-        const ele=await $("#print-page")
-       await ele.scrollIntoView();
-        await browser.pause(4000)
-    })
+    //     browser.url("https://www.tutorialspoint.com/webdriverio/webdriverio_scrolling_operations.htm")
+    //     await browser.maximizeWindow();
+    //     const ele=await $("#print-page")
+    //    await ele.scrollIntoView();
+    //     await browser.pause(4000)
+    // })
 
 //     browser.url("https://webdriver.io/docs/api/browser/scroll")
 //     await browser.maximizeWindow();
@@ -131,20 +136,20 @@ it('moveTo',async() => {
 
 
 
-it('drag and drop',async()=>{
+// it('drag and drop',async()=>{
 
-    // await browser.url("https://jqueryui.com/droppable/")
-    // await browser.maximizeWindow()
-    // const ele=await $("#draggable")
-    // const source=await $("//div[@id='droppable']")
-    await browser.url("http://www.dhtmlgoodies.com/submitted-scripts/i-google-like-drag-drop/index.html")
-    await browser.maximizeWindow()
-    const ele=await $("#block-1")
-    const source=await $("#block-4")
+//     // await browser.url("https://jqueryui.com/droppable/")
+//     // await browser.maximizeWindow()
+//     // const ele=await $("#draggable")
+//     // const source=await $("//div[@id='droppable']")
+//     await browser.url("http://www.dhtmlgoodies.com/submitted-scripts/i-google-like-drag-drop/index.html")
+//     await browser.maximizeWindow()
+//     const ele=await $("#block-1")
+//     const source=await $("#block-4")
 
-    await ele.dragAndDrop(source)
-    await browser.pause(4000)
-     })
+//     await ele.dragAndDrop(source)
+//     await browser.pause(4000)
+//      })
 
 
 // it('alert',async()=>{
@@ -191,14 +196,14 @@ it('drag and drop',async()=>{
     // })
 
 
-     it('isClickable',async()=>{
+    //  it('isClickable',async()=>{
 
-        await browser.url("https://www.facebook.com/")
-        await browser.maximizeWindow()
-       const value= await $("//button[text()='Log in']")
-       console.log(await value.isClickable());
-       console.log("Yes");
-     })
+    //     await browser.url("https://www.facebook.com/")
+    //     await browser.maximizeWindow()
+    //    const value= await $("//button[text()='Log in']")
+    //    console.log(await value.isClickable());
+    //    console.log("Yes");
+    //  })
 
 
     // await browser.url("file:///C:/Users/KARMA/AppData/Local/Microsoft/Windows/INetCache/IE/LD06SW62/DisabledElements[1].html")
@@ -208,33 +213,33 @@ it('drag and drop',async()=>{
     //  })
 
 
-    it('isDisplayed',async()=>{
+    // it('isDisplayed',async()=>{
 
-        await browser.url("https://www.facebook.com/")
-            await browser.maximizeWindow()
-           const value1= await $("//button[text()='Log in']")
-           console.log(await value1.isDisplayed());
+    //     await browser.url("https://www.facebook.com/")
+    //         await browser.maximizeWindow()
+    //        const value1= await $("//button[text()='Log in']")
+    //        console.log(await value1.isDisplayed());
 
-        await browser.url("https://omayo.blogspot.com/")
-        await browser.maximizeWindow()
-        const value=await $("//button[@id='but1']")
-        console.log(await value.isClickable());
-    })
+    //     await browser.url("https://omayo.blogspot.com/")
+    //     await browser.maximizeWindow()
+    //     const value=await $("//button[@id='but1']")
+    //     console.log(await value.isClickable());
+    // })
 
-    it('isEnabled',async()=>{
-        await browser.url("https://omayo.blogspot.com/")
-        await browser.maximizeWindow()
-        const value=await $("//button[@id='but2']")
-        console.log(await value.isEnabled());
-    })
+    // it('isEnabled',async()=>{
+    //     await browser.url("https://omayo.blogspot.com/")
+    //     await browser.maximizeWindow()
+    //     const value=await $("//button[@id='but2']")
+    //     console.log(await value.isEnabled());
+    // })
 
-    it('isSelected',async()=>{
-        await browser.url("https://omayo.blogspot.com/")
-        await browser.maximizeWindow()
-        //const value=await $("//input[@id='checkbox2']")
-        const value=await $("//input[@id='checkbox1']")
-        console.log(await value.isSelected());
-    })
+    // it('isSelected',async()=>{
+    //     await browser.url("https://omayo.blogspot.com/")
+    //     await browser.maximizeWindow()
+    //     //const value=await $("//input[@id='checkbox2']")
+    //     const value=await $("//input[@id='checkbox1']")
+    //     console.log(await value.isSelected());
+    // })
 
     // it('isExisting',async()=>{
     //     await browser.url("https://omayo.blogspot.com/")
@@ -244,13 +249,13 @@ it('drag and drop',async()=>{
     //     console.log(await value.isExisting());
     // })
 
-    it('isEqual',async()=>{
-            await browser.url("https://omayo.blogspot.com/")
-            await browser.maximizeWindow()
-            const value=await $("//button[@id='but2']")
-            const value1=await $("#but2")
-            console.log(await value.isEqual(value1));
-        })
+    // it('isEqual',async()=>{
+    //         await browser.url("https://omayo.blogspot.com/")
+    //         await browser.maximizeWindow()
+    //         const value=await $("//button[@id='but2']")
+    //         const value1=await $("#but2")
+    //         console.log(await value.isEqual(value1));
+    //     })
 
     // it('waitForClickable',async()=>{
 
@@ -310,12 +315,12 @@ it('drag and drop',async()=>{
     //     await expect(browser).toHaveTitle("YouTube") 
     // })
 
-    // it('assertions',async()=>{
-    //     await browser.url("https://omayo.blogspot.com/")
-    //    const element=await $("//div[@class='post-body entry-content']")
-    //    await expect(element).toHaveText("This is a sample text in the Page One.")
+    it('assertions',async()=>{
+        await browser.url("https://omayo.blogspot.com/")
+       const element=await $("//div[@class='post-body entry-content']")
+       await expect(element).toHaveText("This is a sample text in the Page One.")
 
-    // })
+    })
 
     // it('toHaveValue',async()=>{
     //     await browser.url("https://webdriver.io/docs/api/expect-webdriverio/")
@@ -331,5 +336,57 @@ it('drag and drop',async()=>{
     //     await expect(element).toBeDisplayedInViewport();
     //     await browser.pause(5000)
 
+    // })
+
+
+    // it("map",async()=>{
+    //     await browser.url("https://omayo.blogspot.com/")
+    //     await browser.maximizeWindow();
+    //     const ele=await $$("//table[@id='table1']/descendant::tr");
+
+    //     //console.log(ele);
+    //     let text= ele.map(async(each)=> {
+    //         return await each.getText()}
+    //     )
+    //     console.log(text);
+    // })
+
+    // it('filter',async()=>{
+    //     await browser.url("https://qavbox.github.io/demo/webtable/")
+    //     // await browser.maximizeWindow();
+
+    //     const ele=await $$("//table[@id='table02']/descendant::tbody/child::tr/child::td[4]")
+
+    //     let text= (await Promise.all(ele.map(async(each)=> parseInt(await each.getText())))).filter((num)=> num>40)
+
+        // for (const a of ele) {
+        //     console.log("hiiiiiiiiii"+ await a.getText());
+        // }
+
+    
+        
+    //     //let age=text.filter(async(num)=> await num>=40)
+
+      
+    //    console.log(text);
+    //    console.log("hiiiiiiiiiiiiiiiiiiiiiiiiii");
+    //    await browser.pause(5000)
+
+    //  })
+
+    it("notifications",async()=>{
+
+        await browser.url("https://www.yatra.com/")
+        await browser.pause(4000)
+    })
+
+    // it('wait',async()=>{
+    //     await browser.url("https://www.tutorialspoint.com/index.htm")
+    //     const ele=await $("//ul[@class='nav align-items-center justify-content-center']/descendant::a[text()=' Coding Ground']");
+    //     // await browser.waitUntil(async()=>{
+    //     //   return (await ele.getText())===" Coding Ground"
+    //     // },{timeout:9000,timeoutMsg:"Element is not displayed"})
+
+    //     await expe
     // })
 })
