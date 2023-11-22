@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//table[@id='table02']/descendant::tbody/child::tr/child::td[4]"
-}

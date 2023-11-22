@@ -1,3 +1,0 @@
-{
-  "url": "https://qavbox.github.io/demo/webtable/"
-}

@@ -1,5 +1,4 @@
 import {expect,assert} from "chai"
-const e = require('chai').expect
 
 
 
@@ -315,12 +314,12 @@ describe("sample",()=>{
     //     await expect(browser).toHaveTitle("YouTube") 
     // })
 
-    it('assertions',async()=>{
-        await browser.url("https://omayo.blogspot.com/")
-       const element=await $("//div[@class='post-body entry-content']")
-       await expect(element).toHaveText("This is a sample text in the Page One.")
+    // it('assertions',async()=>{
+    //     await browser.url("https://omayo.blogspot.com/")
+    //    const element=await $("//div[@class='post-body entry-content']")
+    //    await expect(element).toHaveText("This is a sample text in the Page One.")
 
-    })
+    // })
 
     // it('toHaveValue',async()=>{
     //     await browser.url("https://webdriver.io/docs/api/expect-webdriverio/")
@@ -339,17 +338,17 @@ describe("sample",()=>{
     // })
 
 
-    // it("map",async()=>{
-    //     await browser.url("https://omayo.blogspot.com/")
-    //     await browser.maximizeWindow();
-    //     const ele=await $$("//table[@id='table1']/descendant::tr");
+    it("map",async()=>{
+        await browser.url("https://omayo.blogspot.com/")
+        await browser.maximizeWindow();
+        const ele=await $$("//table[@id='table1']/descendant::tr");
 
-    //     //console.log(ele);
-    //     let text= ele.map(async(each)=> {
-    //         return await each.getText()}
-    //     )
-    //     console.log(text);
-    // })
+        //console.log(ele);
+        let text= ele.map(async(each)=> {
+            return await each.getText()}
+        )
+        console.log(text);
+    })
 
     // it('filter',async()=>{
     //     await browser.url("https://qavbox.github.io/demo/webtable/")
@@ -374,11 +373,11 @@ describe("sample",()=>{
 
     //  })
 
-    it.only("notifications",async()=>{
+    // it.only("notifications",async()=>{
 
-        await browser.url("https://www.yatra.com/")
-        await browser.pause(4000)
-    })
+    //     await browser.url("https://www.yatra.com/")
+    //     await browser.pause(4000)
+    // })
 
     // it('wait',async()=>{
     //     await browser.url("https://www.tutorialspoint.com/index.htm")
@@ -389,4 +388,10 @@ describe("sample",()=>{
 
     //     await expe
     // })
+
+
+    // it('trying', async() => {
+    //     await browser.url('https://webdriver.io/')
+    //     await expect(browser).toHaveUrlContaining('webdriver')
+    // });
 })

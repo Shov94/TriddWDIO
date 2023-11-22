@@ -1,5 +1,5 @@
 //import assert from "chai/lib/chai/interface/assert";
-import {expect,assert} from "chai"
+//import {expect,assert} from "chai"
 
 export const config = {
     //
@@ -92,7 +92,7 @@ export const config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'silent',
     //
     // Set specific log levels per logger
     // loggers:
@@ -272,8 +272,6 @@ export const config = {
             await browser.takeScreenshot();
         }
     },
-
-
     /**
      * Hook that gets executed after the suite has ended
      * @param {object} suite suite details

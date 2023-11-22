@@ -1,3 +1,0 @@
-{
-  "url": "https://www.tutorialspoint.com/webdriverio/webdriverio_scrolling_operations.htm"
-}
